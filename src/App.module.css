@@ -1,17 +1,42 @@
 .container {
-  padding: 20px;
   background-color: #fff;
   color: #333;
   font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logoContainer img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 .header {
   text-align: center;
   font-size: 2.5rem;
   color: #333;
-  margin-top: 40px;
-  margin-bottom: 20px;
   font-weight: 600;
+}
+
+.subheader {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #807676;
+  margin-top: 10px;
 }
 
 .list {
@@ -53,13 +78,13 @@
 .link {
   display: inline-block;
   margin-top: 15px;
-  color: #007bff;
+  color: #1d3da5;
   text-decoration: none;
   font-weight: 500;
 }
 
 .link:hover {
-  text-decoration: underline;
+  color: #122972;
 }
 
 .image {
@@ -67,4 +92,101 @@
   height: auto;
   border-radius: 8px;
   margin-top: 15px;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footerContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footerContent p {
+  margin: 10px 0;
+}
+
+.footerContent a {
+  color: #1d3da5;
+  text-decoration: none;
+}
+
+.footerContent a:hover {
+  color: #122972;
+}
+
+.sci {
+  color: #1d3da5;
+}
+
+.feed {
+  color: red;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #1d3da5;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .subheader {
+    font-size: 1rem;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .listItem {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .snippet {
+    font-size: 0.875rem;
+  }
+
+  .footerContent {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .subheader {
+    font-size: 0.875rem;
+  }
+
+  .listItem {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 0.875rem;
+  }
+
+  .snippet {
+    font-size: 0.75rem;
+  }
 }

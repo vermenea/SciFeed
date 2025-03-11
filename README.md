@@ -18,3 +18,9 @@ A simple and modern **React** application that fetches and displays the latest h
 
 ## ❗ READ THIS ❗
 The API has a daily usage limit of 1000 requests. If this limit is reached, the page will no longer fetch new data until the next day. Please try again later once the limit resets. 😊
+
+
+
+------
+
+Dummy version of app is here, soon more features will be added !

@@ -2,7 +2,6 @@
   background-color: #fff;
   color: #333;
   font-family: 'Arial', sans-serif;
-  padding: 20px;
 }
 
 .headerContainer {
@@ -41,7 +40,7 @@
 
 .list {
   list-style-type: none;
-  padding: 0;
+  padding: 2em;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -96,7 +95,6 @@
 
 .footer {
   margin-top: 40px;
-  padding: 20px;
   background-color: #f8f8f8;
   text-align: center;
   border-top: 1px solid #e0e0e0;

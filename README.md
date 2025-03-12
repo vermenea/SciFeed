@@ -1,54 +1,26 @@
-# React + TypeScript + Vite
+# SciFeed 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and modern **React** application that fetches and displays the latest health-related news from a reliable API. The app leverages the **GNews API** to gather articles and display them in a clean and user-friendly layout. Articles are fetched dynamically and include titles, descriptions, images, and links to the full news source.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Fetch Latest Health News**: Displays the most recent articles related to health from the **GNews API**.
+- **Responsive Layout**: The app has a clean and responsive design, optimized for both desktop and mobile devices.
+- **User-Friendly Interface**: Articles are displayed with titles, images, descriptions, and clickable links.
+- **React and React Query**: The app uses React for the front-end and React Query for efficient API data fetching and caching.
+- **Minimalistic Design**: The interface follows a minimalist design approach with soft pastel colors and simple typography.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend**: React, TypeScript, React Query & Axios
+- **Styling**: CSS Modules for component-based styling
+- **API**: GNews API (https://gnews.io) for fetching the latest health news
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ❗ READ THIS ❗
+The API has a daily usage limit of 1000 requests. If this limit is reached, the page will no longer fetch new data until the next day. Please try again later once the limit resets. 😊
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+------
+
+Dummy version of app is here, soon more features will be added !

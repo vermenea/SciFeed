@@ -1,9 +1,9 @@
-/// <reference types="node" />
+
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
 const fetchNews = async () => {
-  const apikey = process.env.REACT_APP_API_KEY;
+  const apikey = import.meta.env.VITE_API_KEY;
   const category = 'health'; // Fetch health-related news
   const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=us&max=10&apikey=${apikey}`;
 
